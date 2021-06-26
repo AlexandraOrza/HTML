@@ -1,0 +1,69 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+		<title>Calculator</title>
+	</head>
+	<body>
+		<header>
+			<nav>
+				<a href="index.html">Home</a>
+				<a href="pagina2.html">Pagina 2</a>
+				<a href="formular.html">Formular
+					<div class="secondMenu" style="color:white;">TEST TEST1 TEST2</div>
+				</a>
+				<a href="fibonacci.html">Fibonacci</a>
+				<a href="calculator.html">Calculator</a>
+			</nav>	
+		</header>
+		
+		<div class="row">
+			<div class="col-4"></div>
+			<div class="col-sm-4">
+				<div class="card" style="margin-top:300px;">
+					<div class="card-body">
+						<h2>Simple Calculator</h2>
+						
+						<hr>
+						
+						<div class="form-group">
+							<label for="calcul">Input1:</label>    
+							<input type="number" id="calcul1" class="form-control"/>
+							
+						</div>
+						
+						<div class="form-group">
+							<label for="calcul2">Input2:</label>
+							<input type="number" id="calcul2" class="form-control"/>
+						</div>
+						
+						<hr>
+						
+						<div class="row">
+							<div class="col-3">
+								<button class="btn btn-outline-warning" onClick="doAddNumbers()">Plus</button>
+							</div>
+							<div class="col-2">
+								<button class="btn btn-outline-secondary" onClick="doMultiplyNumbers()">Multiply</button>
+							</div>
+							<div class="col-1">
+								<button class="btn btn-outline-success" onClick="doSubstractNumbers()">Substract</button>
+							</div>
+							<div class="col-0">
+								<button class="btn btn-outline-danger" onClick="doDivisionNumbers()">Division</button>
+							</div>
+							<div class="col-7">
+								Result:<span id="res"></span>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			<div class="col-4"></div>
+			</div>
+		</div>
+	</body>
+	<script src="script.js"></script>
+	<script src="bootstrap.min.js"></script>
+	
+</html>
